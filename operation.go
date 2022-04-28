@@ -19,7 +19,7 @@ import (
 )
 
 // Operation describes a single API operation on a path.
-// For more information: https://github.com/geeks-accelerator/swag#api-operation
+// For more information: https://github.com/juiicesb/swagger#api-operation
 type Operation struct {
 	HTTPMethod string
 	Path       string

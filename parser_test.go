@@ -2881,7 +2881,7 @@ func TestSkipMustParseVendor(t *testing.T) {
 	currentPathInfo, _ := os.Stat(currentPath)
 	assert.True(t, parser.Skip(currentPath, currentPathInfo) == nil)
 
-	folder3 := "/tmp/test/vendor/github.com/geeks-accelerator/swag"
+	folder3 := "/tmp/test/vendor/github.com/juiicesb/swagger"
 	assert.NoError(t, os.MkdirAll(folder3, os.ModePerm))
 	f3, _ := os.Stat(folder3)
 

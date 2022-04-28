@@ -1,7 +1,7 @@
 package data
 
 import (
-	"github.com/geeks-accelerator/swag/testdata/alias_type/types"
+	"github.com/juiicesb/swagger/testdata/alias_type/types"
 	"time"
 )
 

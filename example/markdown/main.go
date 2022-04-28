@@ -3,8 +3,8 @@ package main
 import (
 	"github.com/gorilla/mux"
 	httpSwagger "github.com/swaggo/http-swagger"
-	"github.com/geeks-accelerator/swag/example/markdown/api"
-	_ "github.com/geeks-accelerator/swag/example/markdown/docs"
+	"github.com/juiicesb/swagger/example/markdown/api"
+	_ "github.com/juiicesb/swagger/example/markdown/docs"
 	"net/http"
 )
 

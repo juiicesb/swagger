@@ -14,7 +14,7 @@ import (
 	"time"
 
 	"github.com/ghodss/yaml"
-	"github.com/geeks-accelerator/swag"
+	"github.com/juiicesb/swagger"
 	"github.com/go-openapi/spec"
 )
 
@@ -246,7 +246,7 @@ import (
 	"strings"
 
 	"github.com/alecthomas/template"
-	"github.com/geeks-accelerator/swag"
+	"github.com/juiicesb/swagger"
 )
 
 var doc = ` + "`{{ printDoc .Doc}}`" + `
