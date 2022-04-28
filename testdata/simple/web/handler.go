@@ -5,7 +5,7 @@ import (
 
 	"github.com/satori/go.uuid"
 	"github.com/shopspring/decimal"
-	"github.com/geeks-accelerator/swag/testdata/simple/cross"
+	"github.com/juiicesb/swagger/testdata/simple/cross"
 )
 
 type Pet struct {

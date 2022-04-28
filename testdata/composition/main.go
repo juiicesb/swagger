@@ -2,7 +2,7 @@ package composition
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/geeks-accelerator/swag/testdata/composition/api"
+	"github.com/juiicesb/swagger/testdata/composition/api"
 )
 
 // @title Swagger Example API
