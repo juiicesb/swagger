@@ -1,4 +1,4 @@
-module github.com/geeks-accelerator/swag
+module github.com/juiicesb/swagger
 
 require (
 	github.com/KyleBanks/depth v1.2.1
