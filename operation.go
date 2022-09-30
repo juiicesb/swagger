@@ -135,7 +135,9 @@ var paramPattern = regexp.MustCompile(`(\S+)[\s]+([\w]+)[\s]+([\S.]+)[\s]+([\w]+
 
 // ParseParamComment parses params return []string of param properties
 // E.g. @Param	queryText		formData	      string	  true		        "The email for login"
-//              [param name]    [paramType] [data type]  [is mandatory?]   [Comment]
+//
+//	[param name]    [paramType] [data type]  [is mandatory?]   [Comment]
+//
 // E.g. @Param   some_id     path    int     true        "Some ID"
 func (operation *Operation) ParseParamComment(commentLine string, astFile *ast.File) error {
 	matches := paramPattern.FindStringSubmatch(commentLine)
@@ -576,7 +578,6 @@ func (operation *Operation) ParseSecurityComment(commentLine string) error {
 	return nil
 }
 
-
 var loadedSpecs map[string]map[string]*ast.TypeSpec
 
 // findTypeDef attempts to find the *ast.TypeSpec for a specific type given the
@@ -655,7 +656,7 @@ func findTypeDef(importPath, typeName string) (*ast.TypeSpec, error) {
 
 var responsePattern = regexp.MustCompile(`([\d]+)[\s]+([\w\{\}]+)[\s]+([\w\-\.\/\{\}=,\[\]]+)[^"]*(.*)?`)
 
-//RepsonseType{data1=Type1,data2=Type2}
+// RepsonseType{data1=Type1,data2=Type2}
 var combinedPattern = regexp.MustCompile(`^([\w\-\.\/\[\]]+)\{(.*)\}$`)
 
 func (operation *Operation) parseResponseObjectSchema(refType string, astFile *ast.File) (*spec.Schema, error) {
@@ -918,7 +919,7 @@ func (operation *Operation) ParseEmptyResponseComment(commentLine string) error 
 	return nil
 }
 
-//ParseEmptyResponseOnly parse only comment out status code ,eg: @Success 200
+// ParseEmptyResponseOnly parse only comment out status code ,eg: @Success 200
 func (operation *Operation) ParseEmptyResponseOnly(commentLine string) error {
 	response := spec.Response{}
 
