@@ -14,8 +14,8 @@ import (
 	"time"
 
 	"github.com/ghodss/yaml"
-	"github.com/juiicesb/swagger"
 	"github.com/go-openapi/spec"
+	"github.com/juiicesb/swagger"
 )
 
 // Gen presents a generate tool for swag.
